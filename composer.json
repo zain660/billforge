@@ -1,12 +1,12 @@
 {
-    "name": "zain/laravel-subscriptions",
+    "name": "zainmalik/billForge",
     "description": "SaaS Subscription management package with multiple gateways, dynamic route blocking, and admin dashboard.",
     "type": "library",
     "license": "MIT",
     "authors": [
         {
-            "name": "Zain",
-            "email": "zain@example.com"
+            "name": "Zain Malik",
+            "email": "imzainmalik1230@gmail.com"
         }
     ],
     "require": {
@@ -15,13 +15,13 @@
     },
     "autoload": {
         "psr-4": {
-            "Zain\\LaravelSubscriptions\\": "src/"
+            "Zain\\BillForge\\": "src/"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "Zain\\LaravelSubscriptions\\SubscriptionServiceProvider"
+                "Zain\\BillForge\\BillForgeServiceProvider"
             ]
         }
     }

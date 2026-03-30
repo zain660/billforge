@@ -1,12 +1,12 @@
 <?php
 
-namespace Zain\LaravelSubscriptions\Http\Controllers;
+namespace Zain\BillForge\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Routing\Controller;
-use Zain\LaravelSubscriptions\Contracts\GatewayManagerInterface;
-use Zain\LaravelSubscriptions\Models\Subscription;
-use Zain\LaravelSubscriptions\Models\SubscriptionPackage;
+use Zain\BillForge\Contracts\GatewayManagerInterface;
+use Zain\BillForge\Models\Subscription;
+use Zain\BillForge\Models\SubscriptionPackage;
 
 class SubscriptionController extends Controller
 {
@@ -40,7 +40,7 @@ class SubscriptionController extends Controller
 
         $coupon = null;
         if ($request->filled('promo_code')) {
-            $coupon = \Zain\LaravelSubscriptions\Models\SubscriptionCoupon::where('code', $request->promo_code)->first();
+            $coupon = \Zain\BillForge\Models\SubscriptionCoupon::where('code', $request->promo_code)->first();
             
             if (!$coupon || !$coupon->isValid()) {
                 return back()->with('error', 'Invalid or expired promo code.');
@@ -48,7 +48,7 @@ class SubscriptionController extends Controller
         }
 
         try {
-            $activeGatewayKey = \Zain\LaravelSubscriptions\Models\GatewaySetting::active()->first()->key ?? 'system';
+            $activeGatewayKey = \Zain\BillForge\Models\GatewaySetting::active()->first()->key ?? 'system';
             $successUrl = route('subscriptions.success').'?package_id='.$package->id.'&gateway='.$activeGatewayKey;
             $cancelUrl = route('subscriptions.cancel');
 

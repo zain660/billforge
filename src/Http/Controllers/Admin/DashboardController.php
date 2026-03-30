@@ -1,11 +1,11 @@
 <?php
 
-namespace Zain\LaravelSubscriptions\Http\Controllers\Admin;
+namespace Zain\BillForge\Http\Controllers\Admin;
 
 use Illuminate\Routing\Controller;
-use Zain\LaravelSubscriptions\Models\Subscription;
-use Zain\LaravelSubscriptions\Models\SubscriptionPackage;
-use Zain\LaravelSubscriptions\Models\GatewaySetting;
+use Zain\BillForge\Models\Subscription;
+use Zain\BillForge\Models\SubscriptionPackage;
+use Zain\BillForge\Models\GatewaySetting;
 
 class DashboardController extends Controller
 {

@@ -1,8 +1,8 @@
 <?php
 
-namespace Zain\LaravelSubscriptions\Gateways;
+namespace Zain\BillForge\Gateways;
 
-use Zain\LaravelSubscriptions\Contracts\PaymentGatewayInterface;
+use Zain\BillForge\Contracts\PaymentGatewayInterface;
 
 class PaypalGateway implements PaymentGatewayInterface
 {

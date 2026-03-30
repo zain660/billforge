@@ -1,11 +1,11 @@
 <?php
 
-namespace Zain\LaravelSubscriptions\Http\Controllers\Admin;
+namespace Zain\BillForge\Http\Controllers\Admin;
 
 use Illuminate\Http\Request;
 use Illuminate\Routing\Controller;
 use Illuminate\Support\Facades\Storage;
-use Zain\LaravelSubscriptions\Models\SubscriptionSetting;
+use Zain\BillForge\Models\SubscriptionSetting;
 
 class SettingsController extends Controller
 {

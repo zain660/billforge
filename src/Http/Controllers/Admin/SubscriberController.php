@@ -1,10 +1,10 @@
 <?php
 
-namespace Zain\LaravelSubscriptions\Http\Controllers\Admin;
+namespace Zain\BillForge\Http\Controllers\Admin;
 
 use Illuminate\Http\Request;
 use Illuminate\Routing\Controller;
-use Zain\LaravelSubscriptions\Models\Subscription;
+use Zain\BillForge\Models\Subscription;
 
 class SubscriberController extends Controller
 {

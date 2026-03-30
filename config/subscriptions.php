@@ -7,13 +7,13 @@ return [
 
     'gateways' => [
         'stripe' => [
-            'class' => \Zain\LaravelSubscriptions\Gateways\StripeGateway::class ,
+            'class' => \Zain\BillForge\Gateways\StripeGateway::class ,
         ],
         'paypal' => [
-            'class' => \Zain\LaravelSubscriptions\Gateways\PaypalGateway::class ,
+            'class' => \Zain\BillForge\Gateways\PaypalGateway::class ,
         ],
         'authorize_net' => [
-            'class' => \Zain\LaravelSubscriptions\Gateways\AuthorizeNetGateway::class ,
+            'class' => \Zain\BillForge\Gateways\AuthorizeNetGateway::class ,
         ],
     ],
 ];

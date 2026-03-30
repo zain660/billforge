@@ -1,8 +1,8 @@
 <?php
 
-namespace Zain\LaravelSubscriptions\Traits;
+namespace Zain\BillForge\Traits;
 
-use Zain\LaravelSubscriptions\Models\Subscription;
+use Zain\BillForge\Models\Subscription;
 
 trait HasSubscriptions
 {

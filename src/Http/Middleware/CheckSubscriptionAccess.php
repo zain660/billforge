@@ -1,11 +1,11 @@
 <?php
 
-namespace Zain\LaravelSubscriptions\Http\Middleware;
+namespace Zain\BillForge\Http\Middleware;
 
 use Closure;
 use Illuminate\Http\Request;
 use Symfony\Component\HttpFoundation\Response;
-use Zain\LaravelSubscriptions\Models\PackageRoute;
+use Zain\BillForge\Models\PackageRoute;
 
 class CheckSubscriptionAccess
 {

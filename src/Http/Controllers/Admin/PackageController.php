@@ -1,10 +1,10 @@
 <?php
 
-namespace Zain\LaravelSubscriptions\Http\Controllers\Admin;
+namespace Zain\BillForge\Http\Controllers\Admin;
 
 use Illuminate\Http\Request;
 use Illuminate\Routing\Controller;
-use Zain\LaravelSubscriptions\Models\SubscriptionPackage;
+use Zain\BillForge\Models\SubscriptionPackage;
 use Illuminate\Support\Facades\Route as RouteFacade;
 
 class PackageController extends Controller

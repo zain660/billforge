@@ -1,6 +1,6 @@
 <?php
 
-namespace Zain\LaravelSubscriptions\Contracts;
+namespace Zain\BillForge\Contracts;
 
 interface PaymentGatewayInterface
 {

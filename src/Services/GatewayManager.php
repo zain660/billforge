@@ -1,9 +1,9 @@
 <?php
 
-namespace Zain\LaravelSubscriptions\Services;
+namespace Zain\BillForge\Services;
 
-use Zain\LaravelSubscriptions\Contracts\GatewayManagerInterface;
-use Zain\LaravelSubscriptions\Models\GatewaySetting;
+use Zain\BillForge\Contracts\GatewayManagerInterface;
+use Zain\BillForge\Models\GatewaySetting;
 
 class GatewayManager implements GatewayManagerInterface
 {

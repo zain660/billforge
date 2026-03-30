@@ -1,4 +1,4 @@
-# Laravel Subscriptions Package
+# BillForge Package
 
 A powerful, full-featured SaaS subscription management package for Laravel. It provides dynamic route protection, multiple gateway support, and a beautiful Admin Dashboard.
 
@@ -12,12 +12,12 @@ A powerful, full-featured SaaS subscription management package for Laravel. It p
 
 1. Require the package locally (if developing) or via composer:
 ```bash
-composer require zain/laravel-subscriptions
+composer require zainmalik/billForge
 ```
 
 2. Publish the package assets and configuration:
 ```bash
-php artisan vendor:publish --provider="Zain\LaravelSubscriptions\SubscriptionServiceProvider"
+php artisan vendor:publish --provider="Zain\BillForge\BillForgeServiceProvider"
 ```
 
 3. Run migrations:
@@ -43,7 +43,7 @@ Add the `HasSubscriptions` trait to your host application's `User` model (`App\M
 namespace App\Models;
 
 use Illuminate\Foundation\Auth\User as Authenticatable;
-use Zain\LaravelSubscriptions\Traits\HasSubscriptions;
+use Zain\BillForge\Traits\HasSubscriptions;
 
 class User extends Authenticatable
 {

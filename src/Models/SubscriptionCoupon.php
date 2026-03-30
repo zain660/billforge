@@ -1,6 +1,6 @@
 <?php
 
-namespace Zain\LaravelSubscriptions\Models;
+namespace Zain\BillForge\Models;
 
 use Illuminate\Database\Eloquent\Model;
 

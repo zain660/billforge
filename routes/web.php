@@ -1,12 +1,12 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use Zain\LaravelSubscriptions\Http\Controllers\Admin\DashboardController;
-use Zain\LaravelSubscriptions\Http\Controllers\Admin\PackageController;
-use Zain\LaravelSubscriptions\Http\Controllers\Admin\GatewayController;
-use Zain\LaravelSubscriptions\Http\Controllers\Admin\SettingsController;
-use Zain\LaravelSubscriptions\Http\Controllers\Admin\SubscriberController;
-use Zain\LaravelSubscriptions\Http\Controllers\SubscriptionController;
+use Zain\BillForge\Http\Controllers\Admin\DashboardController;
+use Zain\BillForge\Http\Controllers\Admin\PackageController;
+use Zain\BillForge\Http\Controllers\Admin\GatewayController;
+use Zain\BillForge\Http\Controllers\Admin\SettingsController;
+use Zain\BillForge\Http\Controllers\Admin\SubscriberController;
+use Zain\BillForge\Http\Controllers\SubscriptionController;
 
 Route::group([
     'prefix' => config('subscriptions.route_prefix', 'admin/subscriptions'),
@@ -17,7 +17,7 @@ Route::group([
     Route::get('/', [DashboardController::class , 'index'])->name('dashboard');
 
     Route::resource('packages', PackageController::class);
-    Route::resource('coupons', \Zain\LaravelSubscriptions\Http\Controllers\Admin\CouponController::class);
+    Route::resource('coupons', \Zain\BillForge\Http\Controllers\Admin\CouponController::class);
 
     Route::get('gateways', [GatewayController::class , 'index'])->name('gateways.index');
     Route::post('gateways/activate/{key}', [GatewayController::class , 'activate'])->name('gateways.activate');

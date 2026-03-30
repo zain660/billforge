@@ -1,8 +1,8 @@
 <?php
 
-namespace Zain\LaravelSubscriptions\Gateways;
+namespace Zain\BillForge\Gateways;
 
-use Zain\LaravelSubscriptions\Contracts\PaymentGatewayInterface;
+use Zain\BillForge\Contracts\PaymentGatewayInterface;
 use Stripe\StripeClient;
 
 class StripeGateway implements PaymentGatewayInterface
@@ -93,7 +93,7 @@ class StripeGateway implements PaymentGatewayInterface
 
         // The user must have a Stripe Customer ID. In a real app, you'd store this on the User model.
         // For this package, we'll try to find an active subscription to get the customer ID.
-        $subscription = \Zain\LaravelSubscriptions\Models\Subscription::where('user_id', $user->id)
+        $subscription = \Zain\BillForge\Models\Subscription::where('user_id', $user->id)
             ->where('gateway_key', 'stripe')
             ->first();
 
